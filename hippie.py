@@ -306,7 +306,11 @@ def _index_view(view: sublime.View) -> Set[str]:
 def _get_char_class(view) -> str:
     word_separators = view.settings().get("word_separators", "")
     return r"[^\s{}]".format(
-        word_separators.replace("\\", "\\\\").replace("]", r"\]")
+        word_separators
+        .replace("\\", "\\\\")
+        .replace("]", r"\]")
+        .replace("-", r"\-")
+        .replace("^", r"\^")
     )
 
 
