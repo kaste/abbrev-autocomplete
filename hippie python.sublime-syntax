@@ -2,10 +2,12 @@
 ---
 name: Hippie Python
 extends: 'Packages/Python/Python.sublime-syntax'
+version: 2
 hidden: true
 scope: source.python.hippie
 contexts:
-  main:
+  expressions-common:
+    - meta_prepend: true
     - match: 'python\("""'
       scope: entity.name.tag
       embed: scope:source.python
@@ -19,5 +21,3 @@ contexts:
       escape: '"""\)'
       escape_captures:
         0: entity.name.tag
-
-    - include: statements
