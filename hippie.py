@@ -162,7 +162,7 @@ def query_completions(view, primer) -> Iterator[str]:
 
 
 class HippieWordCompletionCommand(sublime_plugin.TextCommand):
-    @print_runtime("completion")
+    # @print_runtime("completion")
     def run(self, edit, forwards=True) -> None:
         global current_completions
         view = self.view
