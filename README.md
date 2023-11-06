@@ -1,6 +1,14 @@
-# Hippie Autocompletion
+# Abbrev-Autocomplete
 
-Sublime Text 2/3 style auto completion for ST4: cycle through words, do not show popup. Simply hit `Tab` to insert completion, hit `Tab` again if you don't like it.
+Sublime Text 2/3 "No-UI" style auto completion for ST4.
+
+- Abbrev-autocomplete fuzzy completes words.  Typically you type `fbs<tab>` to complete
+e.g. `find_by_selector`.
+- Abbrev-autocomplete automatically remembers your preferred completions.  Basically
+it maintains a map from typed abbreviations to completed word.
+- You can cycle through completions backwards with `shift+tab`.
+
+
 
 Features:
 
@@ -9,14 +17,8 @@ Features:
 - expands abbreviations into combined_words for snake, mixed and camel case
 - prioritizes previously chosen completions
 - current view words go before other views words
-
-TODO:
-
-- prefer words closer to cursor?
-- take into account scope/language word defined vs we are editing
-- better support for multiple cursors, i.e. if primers differ
-- obey `word_separators` setting to parse words
-- `shift+tab` to cycle back? `backspace` to cancel?
+- supports `shift-tab`
 
 
-Started from discussion [here](https://forum.sublimetext.com/t/st3-style-autocomplete-in-st4/57774) and based on sketch by **LightsOut8008**.
+Started as fork of https://github.com/Suor/sublime-hippie-autocomplete which started in a discussion [here](https://forum.sublimetext.com/t/st3-style-autocomplete-in-st4/57774) and
+is based on sketch by **LightsOut8008**.
