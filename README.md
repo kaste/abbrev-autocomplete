@@ -14,6 +14,7 @@ Features:
 
 - fuzzy search
 - supports multiple cursors
+- works in the find input panels making incremental find a breeze
 - expands abbreviations into combined_words for snake, mixed and camel case
 - prioritizes previously chosen completions
 - current view words go before other views words
