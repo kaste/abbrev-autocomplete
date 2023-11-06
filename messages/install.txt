@@ -1,1 +1,3 @@
-Hit Tab to complete a word, hit Tab again if you don't like the first completion.
+Hit `tab` to complete a word.
+Hit `tab` again if you don't like the first completion.
+Hit `shift-tab` to go backwards and see the previous completion.
