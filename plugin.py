@@ -188,7 +188,7 @@ class HippieWordCompletionCommand(sublime_plugin.TextCommand):
 
         try:
             suggestion = current_completions.next_suggestion(forwards)
-        except ValueError:
+        except (StopIteration, ValueError):
             window.status_message("No available completions")
             return
 
