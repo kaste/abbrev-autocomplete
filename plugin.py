@@ -457,6 +457,7 @@ def install_low_priority_package() -> None:
 
     files_to_copy = {
         ".python-version": "3.8\n",
+        ".hidden-sublime-package": "",
         "Default.sublime-keymap": keymap,
         "unloader.py": unloader.format(
             main_plugin=this_module, package_fpath=package_fpath
